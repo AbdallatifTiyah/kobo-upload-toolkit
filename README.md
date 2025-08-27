@@ -69,7 +69,9 @@ python 01_get_schema_and_template.py
 ```
 ## Console output:
 ✅ Schema downloaded. Open 'form_schema.json' to explore.
+
 ✅ Excel template written to 'kobo_import_template.xlsx'
+
    Template columns (...): start, end, ...
    Added 'choices' sheet with select codes and dropdowns.
    'fields_catalog' & 'XML_Formula' now exclude logical type 'note'.
