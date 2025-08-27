@@ -42,26 +42,31 @@ cd <your-repo-folder>
 ## 2. Create a virtual environment
 
 Windows (PowerShell):
+```bash
 python -m venv .venv
 . .\.venv\Scripts\Activate.ps1
-
+```
 macOS / Linux:
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
-
+```
 ## 3. Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ## Configuration
 
 Open the script (01_get_schema_and_template.py) and set:
+```bash
 API_TOKEN = "your_kobo_api_token_here"
 FORM_UID  = "your_form_id_here"
 ASSET_URL = f"https://collect.nrc.no/api/v2/assets/{FORM_UID}/?format=json"
-
+```
 ## Run
+```bash
 python 01_get_schema_and_template.py
-
+```
 ## Console output:
 ✅ Schema downloaded. Open 'form_schema.json' to explore.
 ✅ Excel template written to 'kobo_import_template.xlsx'
