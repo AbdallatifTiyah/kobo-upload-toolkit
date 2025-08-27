@@ -38,3 +38,39 @@ Clone the repo:
 ```bash
 git clone <your-repo-url>.git
 cd <your-repo-folder>
+
+## 2. Create a virtual environment
+
+Windows (PowerShell):
+python -m venv .venv
+. .\.venv\Scripts\Activate.ps1
+
+macOS / Linux:
+python3 -m venv .venv
+source .venv/bin/activate
+
+## 3. Install dependencies
+pip install -r requirements.txt
+
+## Configuration
+
+Open the script (01_get_schema_and_template.py) and set:
+API_TOKEN = "your_kobo_api_token_here"
+FORM_UID  = "your_form_id_here"
+ASSET_URL = f"https://collect.nrc.no/api/v2/assets/{FORM_UID}/?format=json"
+
+## Run
+python 01_get_schema_and_template.py
+
+## Console output:
+✅ Schema downloaded. Open 'form_schema.json' to explore.
+✅ Excel template written to 'kobo_import_template.xlsx'
+   Template columns (...): start, end, ...
+   Added 'choices' sheet with select codes and dropdowns.
+   'fields_catalog' & 'XML_Formula' now exclude logical type 'note'.
+
+## Troubleshooting
+  - 401 Unauthorized → Check token is valid and has Token prefix.
+  - 404 Not found → Wrong FORM_UID or wrong server (KPI vs KC).
+  - Empty choices → Dynamic/external lists aren’t included in schema.
+  - Missing columns → note and calculated fields are excluded by design.
