@@ -105,13 +105,13 @@ This script reads rows from `ready_to_upload.xlsx`, builds an XML submission per
 ---
 
 ## Folder layout
-
+```bash
 ├─ send_to_kobo.py # your script
 ├─ ready_to_upload.xlsx # input data (one row per submission)
 └─ images/
   └─ image_inside/
     └─ 123456789/ # q12_ID_Number = 123456789
-
+```
 
 - The script expects images under `images/image_inside/<q12_ID_Number>/`.
 - It picks the **first** file it finds with an allowed extension:
@@ -127,7 +127,7 @@ Open the top of the script and set these constants:
 API_KEY   = "your_kobo_api_token_here"             # <-- your KoBo API token (string after "Token ")
 ASSET_UID = "your_form_id_here"             # <-- your XForm ID (asset UID used as XML root tag)
 KC        = "https://kobo-kc.nrc.no"  # <-- KoBoCAT base URL (NOT KPI)
-
+```
 ## Required Excel columns
 
 Your `ready_to_upload.xlsx` must include:
