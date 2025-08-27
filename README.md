@@ -38,7 +38,7 @@ Clone the repo:
 ```bash
 git clone <your-repo-url>.git
 cd <your-repo-folder>
-
+```
 ## 2. Create a virtual environment
 
 Windows (PowerShell):
