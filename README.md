@@ -26,7 +26,7 @@ This step fetches a form’s **schema** from KoBo and generates a reusable **Exc
 
 - Python 3.10+
 - A valid **KoBo API token**
-- The form’s **UID** (e.g., `aNeLjU59zZoou9pwLwkz8e`)
+- The form’s **UID** (e.g., `aNeLjU59zZoou`)
 - Access to your org’s KoBo server (e.g., `https://collect.nrc.no`)
 
 ---
