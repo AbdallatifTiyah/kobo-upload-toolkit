@@ -98,7 +98,7 @@ This script reads rows from `ready_to_upload.xlsx`, builds an XML submission per
 - **Python 3.10+**
 - Access to your KoBoCAT server (KC), e.g. `https://kobo-kc.nrc.no`
 - A valid **API token** for the account submitting data
-- The form’s **XForm ID** (asset UID), e.g. `aNeLjU59zZoou9pwLwkz8e`
+- The form’s **XForm ID** (asset UID), e.g. `aNeLjU59zZoou`
 - A filled `ready_to_upload.xlsx` with the expected column headers (see below)
 - (Optional) Image files placed in the expected folder structure
 
